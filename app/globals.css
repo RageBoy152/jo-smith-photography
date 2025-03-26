@@ -1,10 +1,28 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
 @import "tailwindcss";
 
 
 @theme {
+
+  /*  colors  */
   --color-body: #F3F3F3;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-accent: #C2D3B2;
+  --color-accent-light: #D8EAC8;
   --color-accent-dark: #6D7B5F;
+
+
+  /*  fonts  */
+  --font-imperial-script: var(--font-imperial-script);
+  --font-noto: var(--font-noto);
+
+
+  /*  font sizes  */
+  --text-2-lg: 2rem;
+  --text-2-xl: 2.5rem;
+
+  --leading-loose: 1.75rem;
+  --shadow-lg: 4px 4px 10px rgba(0,0,0,0.5);
+
 }
