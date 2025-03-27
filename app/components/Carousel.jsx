@@ -12,27 +12,29 @@ export default function Carousel() {
   const slidesContainer = useRef(null);
   const slideRefs = useRef([]);
 
+  const dev_carouselAutoScroll = false;
+
 
 
   const slides = [
     {
       heroText: "Beautiful Wedding Photography",
-      imagePath: "./wedding-1.jpg",
+      imagePath: "./home/wedding-hero.jpg",
       imageAlt: "Scenic wedding couple holding hands photograph"
     },
     {
       heroText: "Loving Family Photography",
-      imagePath: "./family-1.jpg",
+      imagePath: "./home/family-hero.jpg",
       imageAlt: "Family photograph on the beach"
     },
     {
       heroText: "Peaceful Nature Photography",
-      imagePath: "./nature-1.jpg",
+      imagePath: "./home/nature-hero.jpg",
       imageAlt: "Sunflower field photograph nature"
     },
     {
       heroText: "Bold Branding Photography",
-      imagePath: "./commercial-1.jpg",
+      imagePath: "./home/commercial-hero.jpg",
       imageAlt: "Cooked chicken with vegetables food photograph"
     }
   ];
@@ -80,6 +82,8 @@ export default function Carousel() {
 
 
   useEffect(() => {
+    if (!dev_carouselAutoScroll) return;
+    
     const autoScrollIntervalId = setInterval(async () => {
       // dont auto scroll if we're hovering over carousel
       if (carouselRef.current.matches(':hover')) return;
@@ -109,10 +113,10 @@ export default function Carousel() {
 
       {/*   NAVIGATION   */}
 
-      <div className="absolute z-15 pointer-events-none w-full h-full flex items-center">
+      <div className="absolute z-15 pointer-events-none w-full h-full flex items-end lg:items-center">
         <div className="w-10/12 h-fit flex items-center justify-between mx-auto text-2-lg">
-          <div onClick={decActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex px-15 py-40"><i className="bi bi-chevron-left"></i></div>
-          <div onClick={incActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex px-15 py-40"><i className="bi bi-chevron-right"></i></div>
+          <div onClick={decActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex ps-5 pe-10 lg:px-15 py-40"><i className="bi bi-chevron-left"></i></div>
+          <div onClick={incActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex pe-5 ps-10 lg:px-15 py-40"><i className="bi bi-chevron-right"></i></div>
         </div>
       </div>
 
