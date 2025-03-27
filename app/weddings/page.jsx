@@ -44,7 +44,7 @@ export default function Weddings() {
 
       <section className="bg-accent">
         <div className="w-10/12 flex py-5 mx-auto">
-          <p>masonary - add this</p>
+          <p>masonary - add this.</p>
         </div>
       </section>
       
