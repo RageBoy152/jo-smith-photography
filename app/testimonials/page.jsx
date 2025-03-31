@@ -1,0 +1,86 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Quote from "../components/Quote";
+
+
+
+export default function Testimonials() {
+  return (
+    <>
+      <Navbar />
+
+
+      {/*    HERO    */}
+
+      <section className="relative text-white min-h-[700px] flex flex-col gap-12 md:gap-6 py-40 items-center justify-center">
+        <img src="./testimonials/testimonials-hero.jpg" alt="" className="absolute w-full h-full object-cover select-none brightness-50" />
+
+        <h1 className="font-imperial-script text-2-xl z-10 text-center">Hear from pleased clients</h1>
+
+        <div className="z-10 w-8/12 flex flex-col md:flex-row gap-18 md:gap-0 items-center md:items-stretch justify-around">
+
+          <Quote quote="I loved working with Jo. She's great at bringing out everyone's character and including their personalities in the final photo." person="John Doe" aligned="left" />
+          <Quote quote="It was a blast working with you and meeting the family. I'm very glad you enjoyed the experience as much as I did photographing it. Thank you for the kind words!" person="Jo Smith" aligned="right" stacked={true} />
+          
+        </div>
+      </section>
+
+
+      {/*    FEATURED TESTIMONIALS    */}
+
+      <section>
+        <div className="w-8/12 py-20 flex flex-col gap-18 md:gap-12 mx-auto">
+
+          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row w-full items-center">
+            <div className="w-full md:w-1/2">
+              <div className="w-3/4">
+                <Quote quote="Jo really takes care in putting love in every photo. I couldn't be more pleased with the results!" person="John Doe" aligned="left" stretch={true} />
+              </div>
+            </div>
+            
+            <div className="w-full md:w-1/2">
+              <div className="w-3/4 aspect-[3/2] ms-auto md:me-auto bg-gray-300 shadow-lg">
+                <img className="w-full h-full object-cover text-center text-black/30" src="./testimonials/featured-testimonial-1.jpg" alt="Image" />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row-reverse w-full items-center">
+            <div className="w-full md:w-1/2">
+              <div className="w-3/4 ms-auto">
+                <Quote quote="I loved the photos we got from the wedding. Jo made sure to capture the day perfectly and gave us lasting memories to hold onto." person="John Doe" aligned="right" stretch={true} />
+              </div>
+            </div>
+            
+            <div className="w-full md:w-1/2">
+              <div className="w-3/4 aspect-[3/2] me-auto md:ms-auto bg-gray-300 shadow-lg">
+                <img className="w-full h-full object-cover text-center text-black/30" src="./testimonials/featured-testimonial-2.jpg" alt="Image" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/*    MORE TESTIMONIALS    */}
+
+      <section className="bg-accent">
+        <div className="w-8/12 py-20 flex flex-col md:flex-row gap-18 md:gap-0 justify-around mx-auto">
+
+          <div className="w-full md:w-2/6">
+            <Quote quote="Jo really takes care in putting love in every photo. I couldn't be more pleased with the results!" person="John Doe" aligned="center" stretch={true} />        
+          </div>
+
+          <div className="w-full md:w-2/6">
+            <Quote quote="Jo really takes care in putting love in every photo. I couldn't be more pleased with the results!" person="John Doe" aligned="center" stretch={true} />        
+          </div>
+
+        </div>
+      </section>
+
+      
+      <Footer />
+    </>
+  );
+}

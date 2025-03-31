@@ -3,6 +3,7 @@ import Carousel from "./components/Carousel";
 import FloatingLabelInput from "./components/FloatingLabelInput";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ContactMessageForm from "./components/ContactMessageForm";
 
 
 
@@ -59,15 +60,7 @@ export default function Home() {
             <h3 className="text-2-lg font-[500]">Let's work together.</h3>
           </div>
           
-          <div className="flex flex-col gap-6">
-            <FloatingLabelInput inputLabel="Name" inputType="text" max={50} />
-            <FloatingLabelInput inputLabel="Email" inputType="email" max={50} />
-            <FloatingLabelInput inputLabel="Message" inputType="text" autoComplete="off" max={100} />
-          </div>
-
-          <div className="transition-colors hover:bg-accent-light bg-accent w-full">
-            <input className="w-full px-3 py-4 h-full outline-0 border-0 cursor-pointer" type="submit" value="Send Message" />
-          </div>
+          <ContactMessageForm />
           
         </div>
 
