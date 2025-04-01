@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
  
@@ -20,22 +21,26 @@ export default function Carousel() {
     {
       heroText: "Beautiful Wedding Photography",
       imagePath: "./home/wedding-hero.jpg",
-      imageAlt: "Scenic wedding couple holding hands photograph"
+      imageAlt: "Scenic wedding couple holding hands photograph",
+      href: "/weddings"
     },
     {
       heroText: "Loving Family Photography",
       imagePath: "./home/family-hero.jpg",
-      imageAlt: "Family photograph on the beach"
+      imageAlt: "Family photograph on the beach",
+      href: "/family"
     },
     {
       heroText: "Peaceful Nature Photography",
       imagePath: "./home/nature-hero.jpg",
-      imageAlt: "Sunflower field photograph nature"
+      imageAlt: "Sunflower field photograph nature",
+      href: "/nature"
     },
     {
       heroText: "Bold Branding Photography",
       imagePath: "./home/commercial-hero.jpg",
-      imageAlt: "Cooked chicken with vegetables food photograph"
+      imageAlt: "Cooked chicken with vegetables food photograph",
+      href: "/commercial"
     }
   ];
 
@@ -137,7 +142,7 @@ export default function Carousel() {
         {slides.map((slide, i) => (
           <div ref={(el) => slideRefs.current[i] = el} key={i} id={`slide-${i}`} className="w-dvw h-full relative flex-shrink-0">
             <div className="absolute z-10 flex flex-col gap-2 items-center justify-center w-full h-full text-2-lg">
-              <h2>{slide.heroText}</h2>
+              <Link href={slide.href} className="transition-all transition-tracking hover:text-accent hover:-tracking-[-10px]">{slide.heroText}</Link>
               <h3 className="font-imperial-script">By Jo Smith</h3>
             </div>
 

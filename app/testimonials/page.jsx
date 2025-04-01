@@ -19,7 +19,7 @@ export default function Testimonials() {
 
         <div className="z-10 w-8/12 flex flex-col md:flex-row gap-18 md:gap-0 items-center md:items-stretch justify-around">
 
-          <Quote quote="I loved working with Jo. She's great at bringing out everyone's character and including their personalities in the final photo." person="John Doe" aligned="left" />
+          <Quote quote="I loved working with Jo. She's great at bringing out everyone's character and including their personalities in the final photo." person="Sophie L." aligned="left" />
           <Quote quote="It was a blast working with you and meeting the family. I'm very glad you enjoyed the experience as much as I did photographing it. Thank you for the kind words!" person="Jo Smith" aligned="right" stacked={true} />
           
         </div>
@@ -34,7 +34,7 @@ export default function Testimonials() {
           <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row w-full items-center">
             <div className="w-full md:w-1/2">
               <div className="w-3/4">
-                <Quote quote="Jo really takes care in putting love in every photo. I couldn't be more pleased with the results!" person="John Doe" aligned="left" stretch={true} />
+                <Quote quote="Jo has an incredible eye for detail and made us feel so comfortable throughout the shoot. Every photo tells a story, and we couldn't be happier with how they turned out!" person="Emily R." aligned="left" stretch={true} />
               </div>
             </div>
             
@@ -48,7 +48,7 @@ export default function Testimonials() {
           <div className="flex flex-col-reverse gap-4 md:gap-0 md:flex-row-reverse w-full items-center">
             <div className="w-full md:w-1/2">
               <div className="w-3/4 ms-auto">
-                <Quote quote="I loved the photos we got from the wedding. Jo made sure to capture the day perfectly and gave us lasting memories to hold onto." person="John Doe" aligned="right" stretch={true} />
+                <Quote quote="From start to finish, Jo made the entire experience effortless and fun. The photos are simply stunning, and I can't wait to book with her again!" person="Olivia T." aligned="right" stretch={true} />
               </div>
             </div>
             

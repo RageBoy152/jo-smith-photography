@@ -13,7 +13,7 @@ export default function Weddings() {
 
       <section className="relative text-white h-[700px] flex items-center justify-center text-xl">
         <img src="./weddings/weddings-hero.jpg" alt="" className="absolute w-full h-full object-cover select-none brightness-50" />
-        <h1 className="z-10">Jo's Wedding Photography</h1>
+        <h1 className="z-10 text-2-lg">Jo's Wedding Photography</h1>
       </section>
 
 

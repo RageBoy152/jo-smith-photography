@@ -31,6 +31,22 @@
 
 
 
+/*  slow down tracking transitions  */
+.transition-tracking { --default-transition-duration: 0.5s; }
+
+
+
+/*  opacity mask for rounded testimonial image on home page  */
+.home-testimonial-image-masked {
+  --mask: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 70%);
+  
+  -webkit-mask-image: var(--mask);
+  mask-image: var(--mask);
+}
+
+
+
+/*  mobile navbar background  */
 @media only screen and (width < theme(--breakpoint-lg)) {
   .nav-bg-gradient {
     background: linear-gradient(transparent, #000 25%, #000 75%, transparent);
