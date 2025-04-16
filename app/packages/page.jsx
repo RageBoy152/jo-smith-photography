@@ -12,35 +12,35 @@ export default function Packages() {
       description: "Choose your favourite image to be printed at 12 x 8”.",
       price: 60,
       type: "print",
-      thumbnailPath: ""
+      thumbnailPath: "/packages/classic.jpg"
     },
     {
       name: "Extra Large",
       description: "Choose your favourite image to be printed at 18 x 12”.",
       price: 80,
       type: "print",
-      thumbnailPath: ""
+      thumbnailPath: "/packages/xlarge.jpg"
     },
     {
       name: "Big Value Bundle",
       description: "Choose your favourite image to be printed at 18 x 12” plus 2 others at 12x8″.",
       price: 125,
       type: "print",
-      thumbnailPath: ""
+      thumbnailPath: "/packages/bigvaluebundle.jpg"
     },
     {
       name: "10 Pack",
       description: "Choose your ten favourite images online, in your own time and in the peace of your own home. Your chosen images will be fully retouched and supplied digitally.",
       price: 190,
       type: "digital",
-      thumbnailPath: ""
+      thumbnailPath: "/packages/10digital.jpg"
     },
     {
       name: "20 Pack",
       description: "Choose your 25 favourite images online, in your own time and in the peace of your own home. Your chosen images will be fully retouched and supplied digitally.",
       price: 250,
       type: "digital",
-      thumbnailPath: ""
+      thumbnailPath: "/packages/20digital.jpg"
     },
   ];
 

@@ -37,7 +37,7 @@ export default function Carousel() {
       href: "/nature"
     },
     {
-      heroText: "Bold Branding Photography",
+      heroText: "Powerful Commercial Photography",
       imagePath: "./home/commercial-hero.jpg",
       imageAlt: "Cooked chicken with vegetables food photograph",
       href: "/commercial"
@@ -141,7 +141,7 @@ export default function Carousel() {
 
         {slides.map((slide, i) => (
           <div ref={(el) => slideRefs.current[i] = el} key={i} id={`slide-${i}`} className="w-dvw h-full relative flex-shrink-0">
-            <div className="absolute z-10 flex flex-col gap-2 items-center justify-center w-full h-full text-2-lg">
+            <div className="absolute z-10 flex flex-col gap-2 items-center justify-center w-full h-full text-2-lg text-center">
               <Link href={slide.href} className="transition-all transition-tracking hover:text-accent hover:-tracking-[-10px]">{slide.heroText}</Link>
               <h3 className="font-imperial-script">By Jo Smith</h3>
             </div>

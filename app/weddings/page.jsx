@@ -1,9 +1,16 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Masonary from "../components/Masonary";
+import { fetchImagesFromUnsplash } from "../utils/unsplash";
 
 
 
-export default function Weddings() {
+export default async function Weddings() {
+  // get images for masonary from unsplash
+  const images = await fetchImagesFromUnsplash("weddings", 16);
+
+
+
   return (
     <>
       <Navbar />
@@ -13,7 +20,7 @@ export default function Weddings() {
 
       <section className="relative text-white h-[700px] flex items-center justify-center text-xl">
         <img src="./weddings/weddings-hero.jpg" alt="" className="absolute w-full h-full object-cover select-none brightness-50" />
-        <h1 className="z-10 text-2-lg">Jo's Wedding Photography</h1>
+        <h1 className="z-10 text-2-lg text-center px-5">Jo's Wedding Photography</h1>
       </section>
 
 
@@ -43,9 +50,7 @@ export default function Weddings() {
       {/*    MASONARY    */}
 
       <section className="bg-accent">
-        <div className="w-10/12 flex py-5 mx-auto">
-          <p>masonary - add this...</p>
-        </div>
+        <Masonary images={images} />
       </section>
       
       <Footer />

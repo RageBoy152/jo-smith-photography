@@ -10,8 +10,8 @@ export default function PackageCard({ pkg }) {
         <p>£{pkg.price}</p>
       </div>
       
-      <div className="w-full aspect-[3/2] flex items-center justify-center mx-auto bg-gray-300">
-        <img className="w-full h-full object-cover text-center text-black/30" src={pkg.thumbnailPath || null} alt="Package Preview Image" />
+      <div className="w-full h-full aspect-[3/2] bg-gray-300">
+        <img className="w-full h-full aspect-[3/2] object-cover text-center text-black/30" src={pkg.thumbnailPath || null} alt="" />
       </div>
 
       <p className="py-2 text-center">{pkg.description}</p>
