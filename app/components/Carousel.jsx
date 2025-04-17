@@ -1,5 +1,6 @@
 'use client';
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
  
@@ -20,25 +21,25 @@ export default function Carousel() {
   const slides = [
     {
       heroText: "Beautiful Wedding Photography",
-      imagePath: "./home/wedding-hero.jpg",
+      imagePath: "/images/home/wedding-hero.jpg",
       imageAlt: "Scenic wedding couple holding hands photograph",
       href: "/weddings"
     },
     {
       heroText: "Loving Family Photography",
-      imagePath: "./home/family-hero.jpg",
+      imagePath: "/images/home/family-hero.jpg",
       imageAlt: "Family photograph on the beach",
       href: "/family"
     },
     {
       heroText: "Peaceful Nature Photography",
-      imagePath: "./home/nature-hero.jpg",
+      imagePath: "/images/home/nature-hero.jpg",
       imageAlt: "Sunflower field photograph nature",
       href: "/nature"
     },
     {
       heroText: "Powerful Commercial Photography",
-      imagePath: "./home/commercial-hero.jpg",
+      imagePath: "/images/home/commercial-hero.jpg",
       imageAlt: "Cooked chicken with vegetables food photograph",
       href: "/commercial"
     }
@@ -113,15 +114,15 @@ export default function Carousel() {
 
 
   return (
-    <section ref={carouselRef} className="relative text-white h-[700px]">
+    <section ref={carouselRef} className="relative text-white h-dvh md:h-[700px]">
 
 
       {/*   NAVIGATION   */}
 
       <div className="absolute z-15 pointer-events-none w-full h-full flex items-end lg:items-center">
         <div className="w-10/12 h-fit flex items-center justify-between mx-auto text-2-lg">
-          <div onClick={decActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex ps-5 pe-10 lg:px-15 py-40"><i className="bi bi-chevron-left"></i></div>
-          <div onClick={incActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex pe-5 ps-10 lg:px-15 py-40"><i className="bi bi-chevron-right"></i></div>
+          <div onClick={decActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex ps-5 pe-10 lg:px-15 py-30 lg:py-40"><i className="bi bi-chevron-left"></i></div>
+          <div onClick={incActiveSlide} className="pointer-events-auto cursor-pointer transition-colors hover:bg-black/20 flex pe-5 ps-10 lg:px-15 py-30 lg:py-40"><i className="bi bi-chevron-right"></i></div>
         </div>
       </div>
 
@@ -146,7 +147,7 @@ export default function Carousel() {
               <h3 className="font-imperial-script">By Jo Smith</h3>
             </div>
 
-            <img className="brightness-50 w-full h-full object-cover" src={slide.imagePath} alt={slide.imageAlt} />
+            <Image src={slide.imagePath} alt={slide.imageAlt} fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
           </div>
         ))}
 

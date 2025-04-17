@@ -2,20 +2,29 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SocialLink from "../components/SocialLink";
 import ContactMessageForm from "../components/ContactMessageForm";
+import CookiesModal from "../components/CookiesModal";
+import Image from "next/image";
+import Head from "next/head";
 
 
 
 export default function Contact() {
   return (
     <>
+      <Head>
+        <title>Jo Smith Photography | Contact</title>
+        <meta name="description" content="Get in touch with Jo Smith Photography in Dundee to book your next photo session. Email, visit the studio, or follow Jo on Instagram, X, and more." />
+        <meta name="keywords" content="contact Jo Smith, Dundee photography studio, book photo session, photography enquiries Dundee, Jo Smith email, photography contact page, professional photographer Dundee, get in touch Jo Smith, photography address Dundee, follow Jo Smith" />
+      </Head>
+      <CookiesModal />
+
       <Navbar />
 
 
       {/*    HERO    */}
 
       <section className="relative text-white min-h-[700px] flex flex-col gap-12 py-40 items-center justify-center">
-        <img src="./contact/contact-hero.jpg" alt="" className="absolute w-full h-full object-cover select-none brightness-50" />
-
+        <Image src="/images/contact/contact-hero.jpg" alt="Beautiful hazy mountainous landscape" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
         <h1 className="font-imperial-script text-2-xl z-10 text-center">Send me a message</h1>
 
         <div className="z-10 w-10/12 md:w-1/2 lg:w-2/6 text-black">

@@ -31,8 +31,22 @@
 
 
 
+/*  prevent scroll when mobile navbar is open  */
+body.scroll-lock {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+
+
 /*  slow down tracking transitions  */
 .transition-tracking { --default-transition-duration: 0.5s; }
+
+
+/*  slow down transitions on cookies modal  */
+.cookies-modal { --default-transition-duration: 0.75s; }
+.cookies-modal .modal-buttons { --default-transition-duration: 0.15s; }
 
 
 
@@ -42,13 +56,4 @@
   
   -webkit-mask-image: var(--mask);
   mask-image: var(--mask);
-}
-
-
-
-/*  mobile navbar background  */
-@media only screen and (width < theme(--breakpoint-lg)) {
-  .nav-bg-gradient {
-    background: linear-gradient(transparent, #000 25%, #000 75%, transparent);
-  }
 }

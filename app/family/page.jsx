@@ -2,6 +2,9 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Masonary from "../components/Masonary";
 import { fetchImagesFromUnsplash } from "../utils/unsplash";
+import Head from "next/head";
+import Image from "next/image";
+import CookiesModal from "../components/CookiesModal";
 
 
 
@@ -13,13 +16,20 @@ export default async function Family() {
 
   return (
     <>
+      <Head>
+        <title>Jo Smith Photography | Family Portfolio</title>
+        <meta name="description" content="View Jo Smith's family photography portfolio. Heartwarming portraits of babies, children, and families taken with care, creativity, and experience." />
+        <meta name="keywords" content="family portraits Dundee, baby photos Dundee, children photography Scotland, Jo Smith family portfolio, classic family portraits, child photography studio, lifestyle family photographer, Jo Smith Photography family, Dundee kids photographer, family photo session" />
+      </Head>
+      <CookiesModal />
+
       <Navbar />
 
 
       {/*    HERO    */}
 
-      <section className="relative text-white h-[700px] flex items-center justify-center text-xl">
-        <img src="./family/family-hero.jpg" alt="" className="absolute w-full h-full object-cover select-none brightness-50" />
+      <section className="relative text-white h-dvh md:h-[700px] flex items-center justify-center text-xl">
+        <Image src="/images/family/family-hero.jpg" alt="Family lined up at the beach during sunset" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
         <h1 className="z-10 text-2-lg text-center px-5">Jo's Family Photography</h1>
       </section>
 
@@ -30,7 +40,7 @@ export default async function Family() {
 
         <div className="w-full lg:w-7/12">
           <div className="aspect-[3/2] flex items-center justify-center mx-auto bg-gray-300 shadow-lg">
-            <img className="w-full h-full object-cover" src="./family/featured-1.jpg" alt="" />
+            <img className="w-full h-full object-cover" src="/images/family/featured-1.jpg" alt="Man with baby girl on lap sitting on a dock" />
           </div>
         </div>
 

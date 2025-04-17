@@ -21,7 +21,7 @@ const imperialScript = Imperial_Script({
 // metadata
 export const metadata = {
   title: "Jo Smith Photography",
-  description: "Placeholder description",
+  description: "Dundee photographer Jo Smith specialises in wedding, family, baby, nature, and product photography. With studio packages, digital photo options, and professional portraits, Jo captures timeless moments across Scotland. Book your photo session today and explore the full photography portfolio online.",
 };
 
 
