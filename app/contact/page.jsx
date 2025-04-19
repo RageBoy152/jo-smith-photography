@@ -43,9 +43,12 @@ export default function Contact() {
             <p>Explore my Gallery here and browse framed photographs for sale.</p>
           </div>
 
-          <div className="w-full aspect-[2/3] sm:aspect-[3/2] md:aspect-[4/2] bg-gray-300 shadow-lg">
-            {/* <img className="w-full h-full object-cover text-center text-black/30" src="./testimonials/featured-testimonial-1.jpg" alt="Image" /> */}
-            <p>Google maps embed</p>
+          <div className="w-full aspect-[2/3] sm:aspect-[3/2] md:aspect-[4/2] bg-gray-300 shadow-lg relative">
+            <div className="absolute top-0 start-0 w-full h-full flex items-center justify-center">
+              <p>Loading map...</p>
+            </div>
+
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KZy_RcbZc-wCV-gy20-eKng1qxOkIbY&ehbc=2E312F&noprof=1" className="w-full h-full relative z-5"></iframe>
           </div>
 
         </div>
