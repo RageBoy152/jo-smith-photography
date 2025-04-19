@@ -14,7 +14,7 @@ export default function Carousel() {
   const slidesContainer = useRef(null);
   const slideRefs = useRef([]);
 
-  const dev_carouselAutoScroll = false;
+  const dev_carouselAutoScroll = true;
 
 
 
