@@ -1,22 +1,33 @@
+// components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Quote from "../components/Quote";
-import Head from "next/head";
 import CookiesModal from "../components/CookiesModal";
 import Image from "next/image";
 
+
+export const metadata = {
+  title: "Testimonials",
+  description: "Read reviews and testimonials from happy clients of Jo Smith Photography. Discover why families, couples, and nature lovers trust Jo for their special moments.",
+  keywords: [
+    "Jo Smith reviews",
+    "photography testimonials",
+    "Dundee photographer feedback",
+    "wedding photo reviews",
+    "family portraits testimonials",
+    "happy clients",
+    "photography recommendations",
+    "photo session experiences",
+    "professional photography praise",
+    "client stories"
+  ]
+}
 
 
 export default function Testimonials() {
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography | Testimonials</title>
-        <meta name="description" content="Read reviews and testimonials from happy clients of Jo Smith Photography. Discover why families, couples, and nature lovers trust Jo for their special moments." />
-        <meta name="keywords" content="Jo Smith reviews, photography testimonials, Dundee photographer feedback, wedding photo reviews, family portraits testimonials, happy clients, photography recommendations, photo session experiences, professional photography praise, client stories" />
-      </Head>
       <CookiesModal />
-
       <Navbar />
 
 

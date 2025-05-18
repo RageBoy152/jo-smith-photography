@@ -1,10 +1,30 @@
+// components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Masonary from "../components/Masonary";
-import { fetchImagesFromUnsplash } from "../utils/unsplash";
-import Head from "next/head";
-import Image from "next/image";
 import CookiesModal from "../components/CookiesModal";
+import Image from "next/image";
+
+// unsplash
+import { fetchImagesFromUnsplash } from "../utils/unsplash";
+
+
+export const metadata = {
+  title: "Family Portfolio",
+  description: "View Jo Smith's family photography portfolio. Heartwarming portraits of babies, children, and families taken with care, creativity, and experience.",
+  keywords: [
+    "family portraits Dundee",
+    "baby photos Dundee",
+    "children photography Scotland",
+    "Jo Smith family portfolio",
+    "classic family portraits",
+    "child photography studio",
+    "lifestyle family photographer",
+    "Jo Smith Photography family",
+    "Dundee kids photographer",
+    "family photo session"
+  ]
+}
 
 
 
@@ -16,13 +36,7 @@ export default async function Family() {
 
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography | Family Portfolio</title>
-        <meta name="description" content="View Jo Smith's family photography portfolio. Heartwarming portraits of babies, children, and families taken with care, creativity, and experience." />
-        <meta name="keywords" content="family portraits Dundee, baby photos Dundee, children photography Scotland, Jo Smith family portfolio, classic family portraits, child photography studio, lifestyle family photographer, Jo Smith Photography family, Dundee kids photographer, family photo session" />
-      </Head>
       <CookiesModal />
-
       <Navbar />
 
 

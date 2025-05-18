@@ -1,23 +1,34 @@
+// components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import SocialLink from "../components/SocialLink";
 import ContactMessageForm from "../components/ContactMessageForm";
 import CookiesModal from "../components/CookiesModal";
 import Image from "next/image";
-import Head from "next/head";
 
+
+export const metadata = {
+  title: "Contact",
+  description: "Get in touch with Jo Smith Photography in Dundee to book your next photo session. Email, visit the studio, or follow Jo on Instagram, X, and more.",
+  keywords: [
+    "contact Jo Smith",
+    "Dundee photography studio",
+    "book photo session",
+    "photography enquiries Dundee",
+    "Jo Smith email",
+    "photography contact page",
+    "professional photographer Dundee",
+    "get in touch Jo Smith",
+    "photography address Dundee",
+    "follow Jo Smith"
+  ]
+}
 
 
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography | Contact</title>
-        <meta name="description" content="Get in touch with Jo Smith Photography in Dundee to book your next photo session. Email, visit the studio, or follow Jo on Instagram, X, and more." />
-        <meta name="keywords" content="contact Jo Smith, Dundee photography studio, book photo session, photography enquiries Dundee, Jo Smith email, photography contact page, professional photographer Dundee, get in touch Jo Smith, photography address Dundee, follow Jo Smith" />
-      </Head>
       <CookiesModal />
-
       <Navbar />
 
 

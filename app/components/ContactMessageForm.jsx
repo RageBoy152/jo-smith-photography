@@ -1,9 +1,7 @@
 'use client';
 
-
-
+// components
 import FloatingLabelInput from "./FloatingLabelInput";
-
 
 
 export default function ContactMessageForm({ onHero }) {

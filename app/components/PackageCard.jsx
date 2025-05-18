@@ -1,7 +1,6 @@
 'use client';
 
 
-
 export default function PackageCard({ pkg }) {
   return (
     <div className="bg-white/75 text-black flex flex-col items-center py-2 px-4 w-full sm:w-1/2 lg:w-[300px] shadow-lg">

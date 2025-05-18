@@ -1,11 +1,30 @@
+// components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Masonary from "../components/Masonary";
-import { fetchImagesFromUnsplash } from "../utils/unsplash";
-import Head from "next/head";
 import CookiesModal from "../components/CookiesModal";
 import Image from "next/image";
 
+// unsplash
+import { fetchImagesFromUnsplash } from "../utils/unsplash";
+
+
+export const metadata = {
+  title: "Wedding Portfolio",
+  description: "Discover Jo Smith's wedding photography portfolio. Capturing emotional, candid moments and timeless memories for couples across Dundee and Scotland.",
+  keywords: [
+    "wedding photography Dundee",
+    "Jo Smith wedding portfolio",
+    "candid wedding photographer",
+    "Scotland wedding photographer",
+    "natural wedding photos",
+    "professional wedding images",
+    "documentary wedding style",
+    "wedding photographer Scotland",
+    "bridal portraits",
+    "Jo Smith Photography weddings"
+  ],
+}
 
 
 export default async function Weddings() {
@@ -16,13 +35,7 @@ export default async function Weddings() {
 
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography | Wedding Portfolio</title>
-        <meta name="description" content="Discover Jo Smith's wedding photography portfolio. Capturing emotional, candid moments and timeless memories for couples across Dundee and Scotland." />
-        <meta name="keywords" content="wedding photography Dundee, Jo Smith wedding portfolio, candid wedding photographer, Scotland wedding photographer, natural wedding photos, professional wedding images, documentary wedding style, wedding photographer Scotland, bridal portraits, Jo Smith Photography weddings" />
-      </Head>
       <CookiesModal />
-
       <Navbar />
 
 

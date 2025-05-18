@@ -1,9 +1,41 @@
 'use client';
-import Link from "next/link";
-import Image from "next/image";
+
+
+// react
 import { useEffect, useRef, useState } from "react";
 
- 
+// components
+import Link from "next/link";
+import Image from "next/image";
+
+
+// const array to define slides data
+const slides = [
+  {
+    heroText: "Beautiful Wedding Photography",
+    imagePath: "/images/home/wedding-hero.jpg",
+    imageAlt: "Scenic wedding couple holding hands photograph",
+    href: "/weddings"
+  },
+  {
+    heroText: "Loving Family Photography",
+    imagePath: "/images/home/family-hero.jpg",
+    imageAlt: "Family photograph on the beach",
+    href: "/family"
+  },
+  {
+    heroText: "Peaceful Nature Photography",
+    imagePath: "/images/home/nature-hero.jpg",
+    imageAlt: "Sunflower field photograph nature",
+    href: "/nature"
+  },
+  {
+    heroText: "Powerful Commercial Photography",
+    imagePath: "/images/home/commercial-hero.jpg",
+    imageAlt: "Cooked chicken with vegetables food photograph",
+    href: "/commercial"
+  }
+];
 
 
 
@@ -15,35 +47,6 @@ export default function Carousel() {
   const slideRefs = useRef([]);
 
   const dev_carouselAutoScroll = true;
-
-
-
-  const slides = [
-    {
-      heroText: "Beautiful Wedding Photography",
-      imagePath: "/images/home/wedding-hero.jpg",
-      imageAlt: "Scenic wedding couple holding hands photograph",
-      href: "/weddings"
-    },
-    {
-      heroText: "Loving Family Photography",
-      imagePath: "/images/home/family-hero.jpg",
-      imageAlt: "Family photograph on the beach",
-      href: "/family"
-    },
-    {
-      heroText: "Peaceful Nature Photography",
-      imagePath: "/images/home/nature-hero.jpg",
-      imageAlt: "Sunflower field photograph nature",
-      href: "/nature"
-    },
-    {
-      heroText: "Powerful Commercial Photography",
-      imagePath: "/images/home/commercial-hero.jpg",
-      imageAlt: "Cooked chicken with vegetables food photograph",
-      href: "/commercial"
-    }
-  ];
 
 
 
@@ -91,6 +94,8 @@ export default function Carousel() {
     if (!dev_carouselAutoScroll) return;
     
     const autoScrollIntervalId = setInterval(async () => {
+      if (carouselRef.current == null) return;
+      
       // dont auto scroll if we're hovering over carousel
       if (carouselRef.current.matches(':hover')) return;
 

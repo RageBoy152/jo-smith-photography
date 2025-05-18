@@ -1,9 +1,12 @@
 'use client'; 
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import SocialLink from "./SocialLink";
 
+// components
+import SocialLink from "./SocialLink";
+import Link from "next/link";
+
+// hooks
+import { usePathname } from "next/navigation";
 
 
 export default function Footer() {

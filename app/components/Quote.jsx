@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useState } from "react";
 
+// react
+import { useEffect, useState } from "react";
 
 
 export default function Quote({ quote, person, aligned, stacked, stretch }) {

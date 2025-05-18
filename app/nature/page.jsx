@@ -1,11 +1,30 @@
+// components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Masonary from "../components/Masonary";
-import { fetchImagesFromUnsplash } from "../utils/unsplash";
-import Head from "next/head";
 import CookiesModal from "../components/CookiesModal";
 import Image from "next/image";
 
+// unsplash
+import { fetchImagesFromUnsplash } from "../utils/unsplash";
+
+
+export const metadata = {
+  title: "Nature Portfolio",
+  description: "Browse Jo Smith's nature photography portfolio. Stunning Scottish landscapes and seascapes captured through bold colour and natural beauty.",
+  keywords: [
+    "nature photography Scotland",
+    "Scottish landscapes",
+    "Jo Smith nature photos",
+    "landscape photographer Dundee",
+    "seascape photography",
+    "Scotland nature shots",
+    "outdoor photography portfolio",
+    "Jo Smith Photography nature",
+    "bold nature photography",
+    "scenic Scotland photos"
+  ]
+}
 
 
 export default async function Nature() {
@@ -16,13 +35,7 @@ export default async function Nature() {
 
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography | Nature Portfolio</title>
-        <meta name="description" content="Browse Jo Smith's nature photography portfolio. Stunning Scottish landscapes and seascapes captured through bold colour and natural beauty." />
-        <meta name="keywords" content="nature photography Scotland, Scottish landscapes, Jo Smith nature photos, landscape photographer Dundee, seascape photography, Scotland nature shots, outdoor photography portfolio, Jo Smith Photography nature, bold nature photography, scenic Scotland photos" />
-      </Head>
       <CookiesModal />
-
       <Navbar />
 
 

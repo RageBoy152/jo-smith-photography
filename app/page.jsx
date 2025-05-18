@@ -1,25 +1,19 @@
-import Link from "next/link";
+// components
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactMessageForm from "./components/ContactMessageForm";
 import Quote from "./components/Quote";
 import CookiesModal from "./components/CookiesModal";
-import Head from "next/head";
-
+import Link from "next/link";
 
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography</title>
-        <meta name="description" content="Dundee photographer Jo Smith captures weddings, families, babies, and landscapes. Book your professional photo session today." />
-        <meta name="keywords" content="Dundee photographer, wedding photography, family portraits, baby photography, nature photography, product photography, Jo Smith Photography, studio photo session, digital photo package, portrait photographer, professional photographer Dundee, Scotland landscapes, photo gift vouchers, children's portraits, photography portfolio, MPA photographer, retouched images, Scottish photography, Dundee photo studio, photography services Dundee" />
-      </Head>
       <CookiesModal />
-      
       <Navbar />
+      
       <Carousel />
 
 

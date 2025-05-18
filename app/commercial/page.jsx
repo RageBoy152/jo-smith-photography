@@ -1,11 +1,30 @@
+// components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Masonary from "../components/Masonary";
-import { fetchImagesFromUnsplash } from "../utils/unsplash";
 import CookiesModal from "../components/CookiesModal";
-import Head from "next/head";
 import Image from "next/image";
 
+// unsplash
+import { fetchImagesFromUnsplash } from "../utils/unsplash";
+
+
+export const metadata = {
+  title: "Commercial Portfolio",
+  description: "Explore Jo Smith's commercial photography work. Professional product and branding images that elevate your business visuals with a creative touch.",
+  keywords: [
+    "commercial photography Dundee",
+    "branding photographer",
+    "Jo Smith commercial work",
+    "product photography Scotland",
+    "business photography",
+    "brand images Dundee",
+    "promotional photos",
+    "Jo Smith Photography commercial",
+    "marketing visuals",
+    "professional business photos"
+  ]
+}
 
 
 export default async function Commercial() {
@@ -16,13 +35,7 @@ export default async function Commercial() {
 
   return (
     <>
-      <Head>
-        <title>Jo Smith Photography | Commercial Portfolio</title>
-        <meta name="description" content="Explore Jo Smith's commercial photography work. Professional product and branding images that elevate your business visuals with a creative touch." />
-        <meta name="keywords" content="commercial photography Dundee, branding photographer, Jo Smith commercial work, product photography Scotland, business photography, brand images Dundee, promotional photos, Jo Smith Photography commercial, marketing visuals, professional business photos" />
-      </Head>
       <CookiesModal />
-
       <Navbar />
 
 

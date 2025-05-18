@@ -1,9 +1,14 @@
 'use client'; 
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+
+// react
 import { useEffect, useState } from "react";
 
+// components
+import Link from "next/link";
+
+// hooks
+import { usePathname } from "next/navigation";
 
 
 export default function Navbar() {
