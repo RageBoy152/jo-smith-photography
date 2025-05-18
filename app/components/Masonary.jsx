@@ -1,3 +1,7 @@
+// components
+import Image from "next/image";
+
+
 export default function Masonary({ images }) {
 
   // init cols array
@@ -20,8 +24,8 @@ export default function Masonary({ images }) {
             const aspectRatio = (imgI + colI) % 2 === 0 ? "aspect-[4/3]" : "aspect-[3/4]";
 
             return (
-              <div key={img.id} className={`overflow-hidden ${aspectRatio}`}>
-                <img src={img.url} alt={img.alt} className="w-full h-full object-cover" />
+              <div key={img.id} className={`overflow-hidden ${aspectRatio} relative`}>
+                <Image placeholder="empty" fill sizes="(min-width:1024px) 25vw, (max-width:1023px) 50vw" src={img.url} alt={img.alt} className="w-full h-full object-cover" />
               </div>
             );
 

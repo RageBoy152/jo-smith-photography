@@ -45,7 +45,7 @@ export default function CookiesModal() {
 
 
   return (
-    <section className="cookies-modal z-20 fixed bottom-0 w-full">
+    <section className={`cookies-modal z-20 fixed bottom-0 w-full ${modalActive ? "pointer-events-auto" : "pointer-events-none"}`}>
       <div className={`transition-all ${modalActive ? "" : "translate-y-200 opacity-0 pointer-events-none"} bg-body shadow-lg w-11/12 lg:w-3/4 mb-5 px-10 lg:px-6 py-5 mx-auto flex flex-col items-center lg:items-start text-center lg:text-start gap-6`}>
 
         <div className="flex flex-col">

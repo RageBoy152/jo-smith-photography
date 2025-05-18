@@ -40,7 +40,7 @@ export default function Navbar() {
     <div className="absolute z-[150] w-full">
       <nav className="font-imperial-script text-white text-2-lg w-10/12 flex flex-col lg:flex-row items-start lg:items-center justify-between pb-5 lg:py-5 mx-auto">
 
-        <div className={`${navbarActive ? "bg-black" : "bg-none"} lg:bg-transparent py-5 lg:py-0 w-full lg:w-fit flex justify-between lg:me-8 z-50`}>
+        <div className={`${navbarActive ? "bg-black" : "bg-none"} transition-colors lg:bg-transparent py-5 lg:py-0 w-full lg:w-fit flex justify-between lg:me-8 z-50`}>
           <Link href="/" className="lg:leading-8">Jo Smith Photography</Link>
           <p onClick={() => setNavbarActive(!navbarActive)} className="lg:hidden transition-colors hover:text-accent cursor-pointer flex items-center self-stretch"><i className={`bi ${navbarActive ? "bi-x" : "bi-list"}`}></i></p>
         </div>

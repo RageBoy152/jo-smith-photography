@@ -43,7 +43,7 @@ export default async function Family() {
       {/*    HERO    */}
 
       <section className="relative text-white h-dvh md:h-[700px] flex items-center justify-center text-xl">
-        <Image src="/images/family/family-hero.jpg" alt="Family lined up at the beach during sunset" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+        <Image src="/images/family/family-hero.jpg" alt="Family lined up at the beach during sunset" fill sizes="100vw" priority className="absolute select-none brightness-50 object-cover" />
         <h1 className="z-10 text-2-lg text-center px-5">Jo's Family Photography</h1>
       </section>
 
@@ -53,8 +53,8 @@ export default async function Family() {
       <section className="relative z-100 flex flex-col lg:flex-row gap-10 lg:gap-0 w-10/12 -mt-40 pb-20 mx-auto">
 
         <div className="w-full lg:w-7/12">
-          <div className="aspect-[3/2] flex items-center justify-center mx-auto bg-gray-300 shadow-lg">
-            <img className="w-full h-full object-cover" src="/images/family/featured-1.jpg" alt="Man with baby girl on lap sitting on a dock" />
+          <div className="aspect-[3/2] flex items-center justify-center mx-auto bg-gray-300 shadow-lg relative">
+            <Image placeholder="empty" fill sizes="(min-width:1024px) 50vw, (max-width:1023px) 80vw" priority className="w-full h-full object-cover" src="/images/family/featured-1.jpg" alt="Man with baby girl on lap sitting on a dock" />
           </div>
         </div>
 

@@ -35,7 +35,7 @@ export default function Contact() {
       {/*    HERO    */}
 
       <section className="relative text-white min-h-[700px] flex flex-col gap-12 py-40 items-center justify-center">
-        <Image src="/images/contact/contact-hero.jpg" alt="Beautiful hazy mountainous landscape" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+        <Image src="/images/contact/contact-hero.jpg" alt="Beautiful hazy mountainous landscape" fill sizes="100vw" priority className="absolute select-none brightness-50 object-cover" />
         <h1 className="font-imperial-script text-2-xl z-10 text-center">Send me a message</h1>
 
         <div className="z-10 w-10/12 md:w-1/2 lg:w-2/6 text-black">

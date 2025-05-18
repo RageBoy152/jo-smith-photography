@@ -42,7 +42,7 @@ export default async function Commercial() {
       {/*    HERO    */}
 
       <section className="relative text-white h-[300px] flex items-center justify-center text-xl">
-        <Image src="/images/commercial/commercial-hero.jpg" alt="Clean polished iphone resting on macbook" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+        <Image src="/images/commercial/commercial-hero.jpg" alt="Clean polished iphone resting on macbook" fill sizes="100vw" priority className="absolute select-none brightness-50 object-cover" />
         <h1 className="z-10 text-2-lg text-center px-5">Jo's Commercial Photography</h1>
       </section>
 

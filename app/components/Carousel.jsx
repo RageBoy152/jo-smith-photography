@@ -143,7 +143,7 @@ export default function Carousel() {
 
       {/*   SLIDES   */}
 
-      <section ref={slidesContainer} className="flex w-dvw h-full overflow-x-hidden scroll-smooth">
+      <section ref={slidesContainer} className="flex w-full h-full overflow-x-hidden scroll-smooth">
 
         {slides.map((slide, i) => (
           <div ref={(el) => slideRefs.current[i] = el} key={i} id={`slide-${i}`} className="w-dvw h-full relative flex-shrink-0">
@@ -152,7 +152,7 @@ export default function Carousel() {
               <h3 className="font-imperial-script">By Jo Smith</h3>
             </div>
 
-            <Image src={slide.imagePath} alt={slide.imageAlt} fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+            <Image placeholder="empty" priority fill sizes="100vw" quality={100} src={slide.imagePath} alt={slide.imageAlt} className="absolute select-none brightness-50 object-cover" />
           </div>
         ))}
 

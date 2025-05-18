@@ -42,7 +42,7 @@ export default async function Weddings() {
       {/*    HERO    */}
 
       <section className="relative text-white h-dvh md:h-[700px] flex items-center justify-center text-xl">
-        <Image src="/images/weddings/weddings-hero.jpg" alt="Bride and groom on a mountain looking towards the horizon" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+        <Image src="/images/weddings/weddings-hero.jpg" alt="Bride and groom on a mountain looking towards the horizon" fill sizes="100vw" priority className="absolute select-none brightness-50 object-cover" />
         <h1 className="z-10 text-2-lg text-center px-5">Jo's Wedding Photography</h1>
       </section>
 
@@ -52,8 +52,8 @@ export default async function Weddings() {
       <section className="relative z-100 flex flex-col lg:flex-row gap-10 lg:gap-0 w-10/12 -mt-40 pb-20 mx-auto">
 
         <div className="w-full lg:w-1/2">
-          <div className="w-4/5 aspect-[2/3] flex items-center justify-center mx-auto bg-gray-300 shadow-lg">
-            <img className="w-full h-full object-cover" src="/images/weddings/featured-1.jpg" alt="" />
+          <div className="w-4/5 aspect-[2/3] flex items-center justify-center mx-auto bg-gray-300 shadow-lg relative">
+            <Image placeholder="empty" fill sizes="(min-width:1024px) 50vw, (max-width:1023px) 70vw" priority className="w-full h-full object-cover" src="/images/weddings/featured-1.jpg" alt="newly wed bride and groom" />
           </div>
         </div>
 
@@ -61,8 +61,8 @@ export default async function Weddings() {
           <p>Intuition and spontaneity are two key ingredients that I believe are crucial in making a great wedding photographer - the third ingredient is experience.</p>
           <p>Experience to know how to get great shots in pouring rain and gloomy light. The experience to know where to position yourself to get key shots during a day that might have been years in the planning. The experience to know how to get the very best from you and your guests.</p>
 
-          <div className="w-full aspect-[3/2] flex items-center justify-center mx-auto bg-gray-300 shadow-lg">
-            <img className="w-full h-full object-cover" src="/images/weddings/featured-2.jpg" alt="" />
+          <div className="w-full aspect-[3/2] flex items-center justify-center mx-auto bg-gray-300 shadow-lg relative">
+            <Image placeholder="empty" fill sizes="(min-width:1024px) 50vw, (max-width:1023px) 80vw" className="w-full h-full object-cover" src="/images/weddings/featured-2.jpg" alt="newly wed bride and groom celebrating" />
           </div>
         
         </div>

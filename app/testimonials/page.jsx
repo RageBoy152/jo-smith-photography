@@ -34,7 +34,7 @@ export default function Testimonials() {
       {/*    HERO    */}
 
       <section className="relative text-white min-h-[700px] flex flex-col gap-12 md:gap-6 py-40 items-center justify-center">
-        <Image src="/images/testimonials/testimonials-hero.jpg" alt="Bride and groom walking into the sunset on the beach" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+        <Image src="/images/testimonials/testimonials-hero.jpg" alt="Bride and groom walking into the sunset on the beach" fill sizes="100vw" priority className="absolute select-none brightness-50 object-cover" />
         <h1 className="font-imperial-script text-2-xl z-10 text-center">Hear from pleased clients</h1>
 
         <div className="z-10 w-8/12 flex flex-col md:flex-row gap-18 md:gap-0 items-center md:items-stretch justify-around">
@@ -59,8 +59,8 @@ export default function Testimonials() {
             </div>
             
             <div className="w-full md:w-1/2">
-              <div className="w-3/4 aspect-[3/2] ms-auto md:me-auto bg-gray-300 shadow-lg">
-                <img className="w-full h-full object-cover text-center text-black/30" src="/images/testimonials/featured-testimonial-1.jpg" alt="Image" />
+              <div className="w-3/4 aspect-[3/2] ms-auto md:me-auto bg-gray-300 shadow-lg relative">
+                <Image placeholder="empty" fill sizes="(min-width:1024px) 40vw, (max-width:1023px) 70vw" className="w-full h-full object-cover text-center text-black/30" src="/images/testimonials/featured-testimonial-1.jpg" alt="Family portrait around the family dog in the grass" />
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@ export default function Testimonials() {
             </div>
             
             <div className="w-full md:w-1/2">
-              <div className="w-3/4 aspect-[3/2] me-auto md:ms-auto bg-gray-300 shadow-lg">
-                <img className="w-full h-full object-cover text-center text-black/30" src="/images/testimonials/featured-testimonial-2.jpg" alt="Image" />
+              <div className="w-3/4 aspect-[3/2] me-auto md:ms-auto bg-gray-300 shadow-lg relative">
+                <Image placeholder="empty" fill sizes="(min-width:1024px) 40vw, (max-width:1023px) 70vw" className="w-full h-full object-cover text-center text-black/30" src="/images/testimonials/featured-testimonial-2.jpg" alt="Couple holding hands enjoying the outdoors" />
               </div>
             </div>
           </div>

@@ -33,35 +33,40 @@ const packages = [
     description: "Choose your favourite image to be printed at 12 x 8”.",
     price: 60,
     type: "print",
-    thumbnailPath: "/images/packages/classic.jpg"
+    thumbnailPath: "/images/packages/classic.jpg",
+    alt: "Printed photo of bride and groom"
   },
   {
     name: "Extra Large",
     description: "Choose your favourite image to be printed at 18 x 12”.",
     price: 80,
     type: "print",
-    thumbnailPath: "/images/packages/xlarge.jpg"
+    thumbnailPath: "/images/packages/xlarge.jpg",
+    alt: "Printed photo of baby hanging on wall"
   },
   {
     name: "Big Value Bundle",
     description: "Choose your favourite image to be printed at 18 x 12” plus 2 others at 12x8″.",
     price: 125,
     type: "print",
-    thumbnailPath: "/images/packages/bigvaluebundle.jpg"
+    thumbnailPath: "/images/packages/bigvaluebundle.jpg",
+    alt: "Printed photos scattered"
   },
   {
     name: "10 Pack",
     description: "Choose your ten favourite images online, in your own time and in the peace of your own home. Your chosen images will be fully retouched and supplied digitally.",
     price: 190,
     type: "digital",
-    thumbnailPath: "/images/packages/10digital.jpg"
+    thumbnailPath: "/images/packages/10digital.jpg",
+    alt: "Woman happy smiling on sofa"
   },
   {
     name: "20 Pack",
     description: "Choose your 25 favourite images online, in your own time and in the peace of your own home. Your chosen images will be fully retouched and supplied digitally.",
     price: 250,
     type: "digital",
-    thumbnailPath: "/images/packages/20digital.jpg"
+    thumbnailPath: "/images/packages/20digital.jpg",
+    alt: "Woman pleased with photos on her phone"
   },
 ];
 
@@ -76,7 +81,7 @@ export default function Packages() {
       {/*    HERO / PRINTS    */}
 
       <section className="relative text-white min-h-dvh py-40 flex flex-col gap-18 items-center justify-center">
-        <Image src="/images/packages/packages-hero.jpg" alt="test" fill={true} priority={true} className="absolute select-none brightness-50 object-cover" />
+        <Image src="/images/packages/packages-hero.jpg" alt="beautiful orange sunset over mountainous landscape" fill sizes="100vw" priority className="absolute select-none brightness-50 object-cover" />
         
         <div className="z-10 text-center w-10/12 lg:w-1/2">
           <h1 className="font-imperial-script text-2-xl mb-4">Affordable, personalized packages</h1>
@@ -99,7 +104,7 @@ export default function Packages() {
       {/*    DIGITALS    */}
 
       <section className="relative min-h-[700px] py-20 flex items-center justify-center">
-        <img src="/images/packages/packages-digital-bg.jpg" alt="" className="absolute w-full h-full object-cover select-none brightness-50" />
+        <Image placeholder="empty" fill sizes="100vw" src="/images/packages/packages-digital-bg.jpg" alt="Young family on a walk in a field" className="absolute w-full h-full object-cover select-none brightness-50" />
 
         <div className="z-10 w-10/12 lg:w-8/12 flex flex-col gap-12">
           <h1 className="font-imperial-script text-center text-2-xl text-white">Digitals</h1>
